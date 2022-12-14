@@ -1,5 +1,6 @@
 # Jetbrains
 .idea/discord.xml
+.idea/workspace.xml
 
 # build output
 dist/
