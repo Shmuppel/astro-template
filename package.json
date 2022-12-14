@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint:css": "stylelint 'src/**/*.{astro,css,svelte}'",
-    "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte}'"
+    "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte,astro}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte,astro}'"
   },
   "dependencies": {
     "@astrojs/svelte": "^1.0.2",
@@ -22,9 +22,12 @@
     "@typescript-eslint/parser": "^5.46.1",
     "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-astro": "^0.21.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-svelte3": "^4.0.0",
     "postcss-html": "^1.5.0",
     "prettier": "^2.8.1",
+    "prettier-plugin-astro": "^0.7.0",
     "prettier-plugin-svelte": "^2.9.0",
     "stylelint": "^14.16.0",
     "stylelint-config-html": "^1.1.0",

@@ -3,8 +3,24 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["prettier", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:astro/recommended",
+    "prettier"
+  ],
   "overrides": [
+    // Astro
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      }
+    },
+    // Svelte
     {
       "files": ["*.svelte"],
       "processor": "svelte3/svelte3"
@@ -15,9 +31,13 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "svelte3"],
+  "plugins": [
+    "@typescript-eslint",
+    "svelte3",
+    "jsx-a11y"
+  ],
   "rules": {
-    "indent": ["error", "tab"],
+    "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"]
