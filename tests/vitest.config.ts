@@ -5,7 +5,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 export default getViteConfig({
   plugins: [svelte({ hot: !process.env.VITEST })],
   test: {
-    include: ['tests/**/*.{test}.{ts}'],
+    include: ['tests/**/*.test.{ts,js}'],
     globals: true,
     environment: 'jsdom',
   },
