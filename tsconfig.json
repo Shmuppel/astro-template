@@ -8,7 +8,7 @@
     "node_modules/*", 
     "__sapper__/*", 
     "public/*", 
-    ".eslintrc.js"
+    "*.cjs",
   ],
   "compilerOptions": {
     "resolveJsonModule": true,
