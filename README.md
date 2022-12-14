@@ -2,6 +2,7 @@
 Astro template using Svelte and a variety of linters and test suites
 
 [![lint](https://github.com/Shmuppel/astro-template/actions/workflows/lint.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/lint.yml)
+[![svelte-check](https://github.com/Shmuppel/astro-template/actions/workflows/svelte-check.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/svelte-check.yml)
 
 ### Linters / Type Checkers
 - Prettier  
