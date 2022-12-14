@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1f8449e-6feb-454f-89fa-e1e9e35af450" name="Changes" comment=":heavy_plus_sign: Add postcss-html as a dev dependency">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+    <list default="true" id="d1f8449e-6feb-454f-89fa-e1e9e35af450" name="Changes" comment=":heavy_plus_sign: Add astro plugins for prettier and eslint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +48,7 @@
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -70,7 +63,7 @@
       <workItem from="1670979293967" duration="41000" />
       <workItem from="1670979338840" duration="7173000" />
       <workItem from="1670987528302" duration="434000" />
-      <workItem from="1670988069382" duration="2584000" />
+      <workItem from="1670988069382" duration="2900000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: Add template and stylelint, eslint, and prettier linters">
       <created>1670988293315</created>
@@ -100,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670988695663</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":heavy_plus_sign: Add astro plugins for prettier and eslint">
+      <created>1670994824533</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670994824533</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +122,8 @@
     <MESSAGE value=":tada: Add template and stylelint, eslint, and prettier linters" />
     <MESSAGE value=":wrench: Disable JetBrains analyse code on commit" />
     <MESSAGE value=":heavy_plus_sign: Add postcss-html as a dev dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value=":heavy_plus_sign: Add postcss-html as a dev dependency" />
+    <MESSAGE value=":heavy_plus_sign: Add astro plugins for prettier and eslint" />
+    <option name="LAST_COMMIT_MESSAGE" value=":heavy_plus_sign: Add astro plugins for prettier and eslint" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

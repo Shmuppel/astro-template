@@ -1,8 +1,8 @@
 {
   "name": "astro-template",
-  "type": "module",
   "version": "0.0.1",
-  "private": true,
+  "type": "commonjs",
+  "private": false,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint:css": "stylelint 'src/**/*.{astro,css,svelte}'",
-    "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte,astro}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte,astro}'"
+    "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte,astro}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte,astro}'",
+    "svelte-check": "npx svelte-check"
   },
   "dependencies": {
     "@astrojs/svelte": "^1.0.2",
@@ -33,6 +34,7 @@
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-idiomatic-order": "^9.0.0",
     "stylelint-config-prettier": "^9.0.4",
-    "stylelint-order": "^5.0.0"
+    "stylelint-order": "^5.0.0",
+    "svelte-check": "^2.10.2"
   }
 }
