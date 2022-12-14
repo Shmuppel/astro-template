@@ -9,8 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "vitest run tests",
-    "test:watch": "vitest tests",
+    "test": "vitest run tests --config tests/vitest.config.ts",
+    "test:watch": "vitest tests --config tests/vitest.config.ts",
     "lint:css": "stylelint 'src/**/*.{astro,css,svelte}'",
     "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte,astro}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte,astro}'",
     "lint:svelte-check": "svelte-check"
