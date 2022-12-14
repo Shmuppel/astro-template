@@ -17,12 +17,14 @@
     "[javascript][typescript][astro][svelte][json]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.codeActionsOnSave": {
-            "source.fixAll.stylelint": true
-        }
     },
     // Stylelint
     "stylelint.validate": ["css", "scss", "astro", "svelte"],
+    "[css][svelte][astro]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.stylelint": true
+        },
+    },
     "css.validate": false,
     "less.validate": false,
     "scss.validate": false

@@ -2,7 +2,8 @@
   "extends": "astro/tsconfigs/strict",
   "include": [
     "src/**/*", 
-    "src/node_modules"
+    "src/node_modules", 
+    "tests/**/*"  
   ],
   "exclude": [
     "node_modules/*", 
@@ -11,9 +12,24 @@
     "*.cjs",
   ],
   "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es2017",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "importsNotUsedAsValues": "remove",
-    "strict": true
+    "importsNotUsedAsValues": "error",
+    "strict": false,
+    "preserveValueImports": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "allowJs": true,
+    "checkJs": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"]
+    }
   }
 }
