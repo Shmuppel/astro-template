@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+      "astro-build.astro-vscode",
+      "svelte.svelte-vscode",
+      "stylelint.vscode-stylelint",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+    ],
+    "unwantedRecommendations": []
+  }
