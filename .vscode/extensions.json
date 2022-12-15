@@ -5,6 +5,8 @@
       "stylelint.vscode-stylelint",
       "esbenp.prettier-vscode",
       "dbaeumer.vscode-eslint",
+      "ms-playwright.playwright",
+      "ZixuanChen.vitest-explorer"
     ],
     "unwantedRecommendations": []
   }

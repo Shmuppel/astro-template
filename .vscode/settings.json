@@ -27,5 +27,9 @@
     },
     "css.validate": false,
     "less.validate": false,
-    "scss.validate": false
+    "scss.validate": false,
+
+    "vitest.include": [
+        "tests/{unit,integration}/*.test.{js,ts,jsx,tsx}"
+    ]
 }

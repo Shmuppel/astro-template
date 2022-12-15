@@ -4,7 +4,7 @@
     "src/**/*", 
     "src/node_modules", 
     "tests/**/*"  
-  ],
+, "playwright.config.ts"  ],
   "exclude": [
     "node_modules/*", 
     "__sapper__/*", 

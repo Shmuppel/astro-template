@@ -9,8 +9,9 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "vitest run tests --config tests/vitest.config.ts",
-    "test:watch": "vitest tests --config tests/vitest.config.ts",
+    "test:vitest": "vitest run tests",
+    "test:vitest-watch": "vitest tests",
+    "test:playwright": "npx playwright test",
     "lint:css": "stylelint 'src/**/*.{astro,css,svelte}'",
     "lint:js": "prettier --check 'src/**/*.{js,ts,tsx,jsx,svelte,astro}' && eslint 'src/**/*.{js,ts,tsx,jsx,svelte,astro}'",
     "lint:svelte-check": "svelte-check"
@@ -21,6 +22,7 @@
     "svelte": "^3.55.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.28.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/svelte": "^3.2.2",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
