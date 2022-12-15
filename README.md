@@ -8,14 +8,18 @@ Astro template using Svelte and a variety of linters and test suites
 
 ### Linters / Type Checkers
 - Prettier  
-- ESLint  
-- Stylelint  
+- ESLint (with a11y)
+- Stylelint  (with idiomatic order)
 - Svelte-check  
+
+### Testing suites
+- Vitest (with Svelte Testing Library)
+- Playwright
 
 ### Editors
 Default settings for plugins are provided for JetBrains IDEs (WebStorm) and VSCode.  
-VSCode currently has the best support for Svelte with Typescript, WebStorm's plugin is lacking.  
+VSCode has Astro syntax support, WebStorm doesn't for the moment. 
 
 
 ### Bugs
-`Cannot find module '.svelte' or its corresponding type declarations.`
+`Cannot find module '.svelte' or its corresponding type declarations.` related to the VSCode Svelte plugin 
