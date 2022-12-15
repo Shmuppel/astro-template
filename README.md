@@ -5,6 +5,7 @@ Astro template using Svelte and a variety of linters and test suites
 [![svelte-check](https://github.com/Shmuppel/astro-template/actions/workflows/svelte-check.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/svelte-check.yml)
 [![vitest](https://github.com/Shmuppel/astro-template/actions/workflows/vitest.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/vitest.yml)
 [![playwright](https://github.com/Shmuppel/astro-template/actions/workflows/playwright.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/playwright.yml)
+![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/shmuppel/3eca25da4f1f1f04172a54cfd111b698/raw/astro-template-coverage.json)
 
 ### Linters / Type Checkers
 - Prettier  
