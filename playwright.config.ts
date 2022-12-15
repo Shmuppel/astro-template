@@ -13,7 +13,10 @@ import { devices } from '@playwright/test'
 const config: PlaywrightTestConfig = {
   testDir: 'tests/e2e',
   reporter: [
-    ['html', { open: 'never', outputFolder: './playwright-report', outputFile: 'report.html' }],
+    [
+      'html',
+      { open: 'never', outputFolder: 'tests/e2e/playwright-report', outputFile: 'report.html' },
+    ],
   ],
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
