@@ -1,0 +1,53 @@
+name: coverage
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+env: 
+  NODE_VERSION: 14
+
+jobs: 
+  test:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install
+        name: Get Coverage for badge
+        run: |
+          # var SUMMARY = [
+          #   '',
+          #   '=============================== Coverage summary ===============================',
+          #   'Statements   : 32.5% ( 39/120 )',
+          #   'Branches     : 38.89% ( 21/54 )',
+          #   'Functions    : 21.74% ( 5/23 )',
+          #   'Lines        : 31.93% ( 38/119 )',
+          #   '================================================================================',
+          #   ''
+          # ];
+          # SUMMARY = SUMMARY.split('\n')[5]; // 'Lines        : 31.93% ( 38/119 )'
+          # SUMMARY = SUMMARY.split(':')[1].split('%')[0].trim(); // '31.93'
+          SUMMARY="$(npm run-script test:vitest-coverage-ci | tail -2 | head -1)"
+          TOKENS=($SUMMARY)
+          # process.env.COVERAGE = '31.93%';
+          echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
+
+        name: Create the Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: 3eca25da4f1f1f04172a54cfd111b698
+          filename: astro-template-coverage.json
+          label: coverage
+          message: ${{ env.COVERAGE }}
+          minColorRange: 0
+          maxColorRange: 100
+          valColorRange: ${{ env.COVERAGE }}.split('%')[0]
+          namedLogo: vitest

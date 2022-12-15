@@ -1,5 +1,5 @@
 # Playwright
-tests/e2e/playwright-report
+tests/reports
 
 # Jetbrains
 .idea/discord.xml

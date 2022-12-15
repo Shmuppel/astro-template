@@ -15,7 +15,7 @@ const config: PlaywrightTestConfig = {
   reporter: [
     [
       'html',
-      { open: 'never', outputFolder: 'tests/e2e/playwright-report', outputFile: 'report.html' },
+      { open: 'never', outputFolder: 'tests/reports/playwright', outputFile: 'report.html' },
     ],
   ],
   /* Maximum time one test can run for. */

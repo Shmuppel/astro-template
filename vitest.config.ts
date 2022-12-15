@@ -8,5 +8,9 @@ export default getViteConfig({
     include: ['tests/{unit,integration}/*.test.{ts,js}'],
     globals: true,
     environment: 'jsdom',
+    coverage: {
+      reportsDirectory: './tests/reports/coverage',
+      reporter: ['html'],
+    },
   },
 })
