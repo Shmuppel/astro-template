@@ -12,6 +12,7 @@ env:
 
 jobs: 
   test:
+    name: vitest-coverage
     runs-on: ubuntu-latest 
     steps:
       - name: Install NodeJS
