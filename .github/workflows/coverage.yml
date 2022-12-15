@@ -15,12 +15,18 @@ jobs:
   test:
     runs-on: ubuntu-latest 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
         with:
-          node-version: 16
-      - run: npm install
-        name: Get Coverage for badge
+          node-version: ${{ env.NODE_VERSION }}
+          
+      - name: Code Checkout
+        uses: actions/checkout@v2
+        
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Get Coverage
         run: |
           # var SUMMARY = [
           #   '',
@@ -39,7 +45,7 @@ jobs:
           # process.env.COVERAGE = '31.93%';
           echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
 
-        name: Create the Badge
+      - name: Create Badge
         uses: schneegans/dynamic-badges-action@v1.0.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
