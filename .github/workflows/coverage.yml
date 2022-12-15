@@ -30,8 +30,9 @@ jobs:
         run: |
           SUMMARY="$(npm run-script test:vitest-coverage-ci | tail -2 | head -1)"
           echo "COVERAGE=$(echo $SUMMARY | cut -d "%" -f 1 | cut -d ":" -f 2 | xargs)" >> $GITHUB_ENV
-
+      
       - name: Create Badge
+        if: ${{ github.actor != 'dependabot[bot]' }}
         uses: schneegans/dynamic-badges-action@v1.6.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
