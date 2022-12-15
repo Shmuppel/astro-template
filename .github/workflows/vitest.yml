@@ -1,7 +1,6 @@
 name: vitest
 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
   pull_request:
@@ -9,10 +8,10 @@ on:
   workflow_dispatch:
 
 env: 
-  NODE_VERSION: 14
+  NODE_VERSION: 16
 
 jobs: 
-  svelte-check:
+  test:
     name: vitest
     runs-on: ubuntu-latest 
     steps: 

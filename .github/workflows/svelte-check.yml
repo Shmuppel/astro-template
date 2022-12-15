@@ -1,7 +1,6 @@
 name: svelte-check
 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
   pull_request:
@@ -9,11 +8,11 @@ on:
   workflow_dispatch:
 
 env: 
-  NODE_VERSION: 14
+  NODE_VERSION: 16
 
 jobs: 
-  svelte-check:
-    name: svelte-check 
+  lint:
+    name: svelte-check
     runs-on: ubuntu-latest 
     steps: 
       - name: Install NodeJS
