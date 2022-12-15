@@ -29,8 +29,7 @@ jobs:
       - name: Get Coverage
         run: |
           SUMMARY="$(npm run-script test:vitest-coverage-ci | tail -2 | head -1)"
-          TOKENS=($SUMMARY)
-          echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
+          echo "COVERAGE=$(echo $SUMMARY | cut -d "%" -f 1 | cut -d ":" -f 2 | xargs)" >> $GITHUB_ENV
 
       - name: Create Badge
         uses: schneegans/dynamic-badges-action@v1.6.0
@@ -39,8 +38,8 @@ jobs:
           gistID: 3eca25da4f1f1f04172a54cfd111b698
           filename: astro-template-coverage.json
           label: coverage
-          message: ${{ env.COVERAGE }}
+          message: ${{ env.COVERAGE }}%
           minColorRange: 0
           maxColorRange: 100
-          valColorRange: ${{ env.COVERAGE }}.split('%')[0]
+          valColorRange: ${{ env.COVERAGE }}
           namedLogo: vitest
