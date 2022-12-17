@@ -7,6 +7,11 @@ Astro template using Svelte and a variety of linters and test suites
 [![playwright](https://github.com/Shmuppel/astro-template/actions/workflows/playwright.yml/badge.svg)](https://github.com/Shmuppel/astro-template/actions/workflows/playwright.yml)
 ![coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/shmuppel/3eca25da4f1f1f04172a54cfd111b698/raw/astro-template-coverage.json)
 
+## Features
+- Typescript
+- SCSS, also available in Svelte files
+- Astro-compress to compress the bundle
+
 ### Linters / Type Checkers
 - Prettier  
 - ESLint (with a11y)
