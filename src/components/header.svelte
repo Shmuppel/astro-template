@@ -4,8 +4,8 @@
 
 <h1>Hello {myname}!</h1>
 
-<style>
+<style lang="scss">
   h1 {
-    color: var(--color-red);
+    color: $color-red;
   }
 </style>

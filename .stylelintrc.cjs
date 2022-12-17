@@ -1,7 +1,7 @@
 module.exports = {
   plugins: ['stylelint-order'],
   extends: [
-    'stylelint-config-html',
+    'stylelint-config-recommended-scss',
     'stylelint-config-prettier',
     'stylelint-config-idiomatic-order',
   ],
@@ -10,4 +10,5 @@ module.exports = {
     'order/order': ['custom-properties', 'declarations'],
     indentation: 2,
   },
+  customSyntax: 'postcss-html',
 }
