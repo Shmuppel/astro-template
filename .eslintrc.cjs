@@ -34,7 +34,7 @@ module.exports = {
     'svelte3/typescript': require('typescript'),
   },
   plugins: ['svelte3', '@typescript-eslint'],
-  ignorePatterns: ['node_modules', '*.cjs', '*.md', 'vitest.config.ts'],
+  ignorePatterns: ['node_modules', '*.cjs', '*.md', '*.config.*'],
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],

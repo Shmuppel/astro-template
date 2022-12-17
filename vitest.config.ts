@@ -1,13 +1,13 @@
 /// <reference types="vitest" />
 import { getViteConfig } from 'astro/config'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import sveltePreprocess from 'svelte-preprocess'
+import svelteConfig from './svelte.config'
 
 export default getViteConfig({
   plugins: [
     svelte({
       hot: !process.env.VITEST,
-      preprocess: [sveltePreprocess({ typescript: true, sass: true })],
+      ...svelteConfig,
     }),
   ],
   test: {
