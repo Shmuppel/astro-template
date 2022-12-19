@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "^5.46.1",
     "@vitest/coverage-c8": "^0.25.8",
     "astro-compress": "^1.1.23",
-    "eslint": "^8.29.0",
+    "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-astro": "^0.21.1",
     "eslint-plugin-jsx-a11y": "^6.6.1",
