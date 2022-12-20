@@ -23,10 +23,8 @@ Astro template using Svelte and a variety of linters and test suites
 - Playwright
 
 ### Editors
-Default settings for plugins I use are provided for JetBrains IDEs (WebStorm) and VSCode, you might want  
-to change these to your liking. VSCode has Astro syntax support, WebStorm doesn't for the moment. 
+Default settings for plugins I use are provided for JetBrains IDEs (WebStorm) and VSCode, you might want to change these to your liking. VSCode has Astro syntax support, WebStorm doesn't for the moment. 
 
 
 ### Bugs
-`Cannot find module '.svelte' or its corresponding type declarations.` when importing Svelte components in .ts files.  
-Affects syntax highlighting only, it seems to be related to the VSCode Svelte plugin.
+`Cannot find module '.svelte' or its corresponding type declarations.` when importing Svelte components in .ts files. Affects syntax highlighting only, it seems to be related to the VSCode Svelte plugin.
