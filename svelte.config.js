@@ -8,6 +8,9 @@ const config = {
       @import 'src/styles/variables.scss';
       `,
     },
+    less: true,
+    sass: { renderSync: true },
+    stylus: true,
     typescript: true,
   }),
 }
