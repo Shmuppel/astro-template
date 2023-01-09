@@ -24,7 +24,7 @@
     "svelte": "^3.55.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.29.0",
+    "@playwright/test": "^1.29.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/svelte": "^3.2.2",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
